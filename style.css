@@ -175,16 +175,16 @@ header a{
     }
 }
 .carousel .list .item:nth-child(1) .content .title{
-    animation-delay: 1.2s!important;
-}
-.carousel .list .item:nth-child(1) .content .topic{
     animation-delay: 1.4s!important;
 }
-.carousel .list .item:nth-child(1) .content .des{
+.carousel .list .item:nth-child(1) .content .topic{
     animation-delay: 1.6s!important;
 }
-.carousel .list .item:nth-child(1) .content .buttons{
+.carousel .list .item:nth-child(1) .content .des{
     animation-delay: 1.8s!important;
+}
+.carousel .list .item:nth-child(1) .content .buttons{
+    animation-delay: 2s!important;
 }
 /* create animation when next click */
 .carousel.next .list .item:nth-child(1) img{
@@ -194,7 +194,7 @@ header a{
     bottom: 50px;
     left: 50%;
     border-radius: 30px;
-    animation: showImage .5s linear 1 forwards;
+    animation: showImage 2s linear 1 forwards;
 }
 @keyframes showImage{
     to{
@@ -243,7 +243,7 @@ header a{
 
 .carousel.next .time,
 .carousel.prev .time{
-    animation: runningTime 3s linear 1 forwards;
+    animation: runningTime 10s linear 1 forwards;
 }
 @keyframes runningTime{
     from{ width: 100%}
@@ -258,7 +258,7 @@ header a{
 }
 
 .carousel.prev .list .item:nth-child(2) img{
-    animation: outFrame 0.5s linear 1 forwards;
+    animation: outFrame 10s linear 1 forwards;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -288,7 +288,7 @@ header a{
 .carousel.prev .list .item:nth-child(2) .content .des,
 .carousel.prev .list .item:nth-child(2) .content .buttons
 {
-    animation: contentOut 1.5s linear 1 forwards!important;
+    animation: contentOut .5s linear 1 forwards!important;
 }
 
 @keyframes contentOut{
@@ -298,7 +298,7 @@ header a{
         opacity: 0;
     }
 }
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 680px) {
     .carousel .list .item .content{
         padding-right: 0;
     }
